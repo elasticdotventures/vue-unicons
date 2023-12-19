@@ -5,6 +5,9 @@ on:
     branches:
       - master
 
+env:
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }} # setting GH_TOKEN for the entire workflow
+
 jobs:
   build:
     runs-on: ubuntu-latest
